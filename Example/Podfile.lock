@@ -1,0 +1,14 @@
+PODS:
+  - FlipFlobjc (0.1.0)
+
+DEPENDENCIES:
+  - FlipFlobjc (from `../`)
+
+EXTERNAL SOURCES:
+  FlipFlobjc:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FlipFlobjc: a9313e391ace67a32863215ec3631a9e28e199dc
+
+COCOAPODS: 0.37.2

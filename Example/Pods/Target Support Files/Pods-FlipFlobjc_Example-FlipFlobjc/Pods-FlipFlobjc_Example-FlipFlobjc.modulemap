@@ -1,0 +1,6 @@
+framework module FlipFlobjc {
+  umbrella header "Pods-FlipFlobjc_Example-FlipFlobjc-umbrella.h"
+
+  export *
+  module * { export * }
+}

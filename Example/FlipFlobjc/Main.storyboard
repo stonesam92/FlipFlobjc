@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch_mockup" translatesAutoresizingMaskIntoConstraints="NO" id="wGd-m2-z92">
+                                <rect key="frame" x="179" y="163" width="243" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="K41-BY-GSF"/>
+                                    <constraint firstAttribute="height" constant="275" id="y5N-00-dXL"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyK-CJ-rsP" userLabel="Watch Screen">
+                                <rect key="frame" x="219" y="203" width="156" height="195"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="2.7755575615628914e-17" translatesAutoresizingMaskIntoConstraints="NO" id="VD5-7Z-wkA">
+                                        <rect key="frame" x="5" y="173" width="148" height="2"/>
+                                    </progressView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="e0s-sP-gvJ">
+                                        <rect key="frame" x="60" y="79" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="e0s-sP-gvJ" secondAttribute="centerY" id="9kk-6v-CdF"/>
+                                    <constraint firstAttribute="height" constant="195" id="RFj-og-Z9q"/>
+                                    <constraint firstAttribute="width" constant="156" id="VmZ-uR-oBK"/>
+                                    <constraint firstItem="VD5-7Z-wkA" firstAttribute="leading" secondItem="CyK-CJ-rsP" secondAttribute="leading" constant="5" id="aJy-vh-n3Y"/>
+                                    <constraint firstAttribute="centerX" secondItem="e0s-sP-gvJ" secondAttribute="centerX" id="adL-Jw-gRu"/>
+                                    <constraint firstAttribute="bottom" secondItem="VD5-7Z-wkA" secondAttribute="bottom" constant="20" id="twe-k4-d7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="VD5-7Z-wkA" secondAttribute="trailing" constant="3" id="z6K-ZF-yME"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CyK-CJ-rsP" firstAttribute="leading" secondItem="wGd-m2-z92" secondAttribute="leading" constant="40" id="5bO-GB-olF"/>
+                            <constraint firstAttribute="centerY" secondItem="wGd-m2-z92" secondAttribute="centerY" id="OmF-FP-DgZ"/>
+                            <constraint firstItem="CyK-CJ-rsP" firstAttribute="top" secondItem="wGd-m2-z92" secondAttribute="top" constant="40" id="kVq-wG-3fY"/>
+                            <constraint firstAttribute="centerX" secondItem="wGd-m2-z92" secondAttribute="centerX" id="vG4-kP-qf5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="e0s-sP-gvJ" id="M8M-z1-NXx"/>
+                        <outlet property="progressView" destination="VD5-7Z-wkA" id="CYQ-OZ-Mhg"/>
+                        <outlet property="watchScreenView" destination="CyK-CJ-rsP" id="dex-NM-lxm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="watch_mockup" width="243" height="275"/>
+    </resources>
+</document>

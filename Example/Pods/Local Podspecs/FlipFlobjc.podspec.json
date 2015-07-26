@@ -1,0 +1,27 @@
+{
+  "name": "FlipFlobjc",
+  "version": "0.1.0",
+  "summary": "Render UIKit views into sequences of PNGs for use in WatchKit animations.",
+  "description": "                    An Objective-C reimplementation of [Flipbook](https://github.com/frosty/Flipbook) with added features:\n\n                       * Custom image output directories\n                       * Ability to specify a callback block to be executed when image capture is complete\n\n",
+  "homepage": "https://github.com/stonesam92/FlipFlobjc",
+  "license": "MIT",
+  "authors": {
+    "Sam Stone": "stonesam92@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/stonesam92/FlipFlobjc.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "FlipFlobjc": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit"
+}
